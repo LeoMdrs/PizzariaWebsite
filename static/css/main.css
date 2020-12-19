@@ -1,0 +1,278 @@
+
+
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root{
+
+    /* Cores */
+    --cor-primaria: #0a4f8a;
+    --cor-secundaria: #2E5C91;
+    --cor-terciaria: #2D9CDB;
+    
+    /* Tipografia */
+    --font-primaria: 'Roboto', sans-serif;
+    --estilo-titulos: uppercase;
+
+    /* Botões */
+    --raio-botao: .15rem;
+    --raio-cards: .15rem;
+
+    /* Espaçamentos */
+    --espaço-secoes: 60px;
+}
+
+
+
+body{
+    font-family: var(--font-primaria);
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 16px;
+}
+
+main{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section{
+    padding-top: var(--espaço-secoes);
+    padding-bottom: var(--espaço-secoes);
+}
+
+
+
+
+
+
+/********************** Componentes **********************/
+/********************** Componentes **********************/
+/********************** Componentes **********************/
+/********************** Componentes **********************/
+/********************** Componentes **********************/
+
+
+/* Botao principal */
+.my-btn{
+    color: white;
+    background: var(--cor-primaria);
+    border-radius: var(--raio-botao);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 0.8rem;
+    padding: .5rem 1rem;
+}
+.my-btn:hover{
+    color: white;
+}
+
+
+/* Botao principal - versão 2 */
+.my-btn-2{
+    color: white;
+    border: 2px solid white;
+    border-radius: var(--raio-botao);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 0.8rem;
+    padding: .5rem 1rem;
+}
+.my-btn-2:hover{
+    color: white;
+}
+
+
+
+
+/* Grid Templates */
+.grid-col-3{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media(max-width: 768px){
+    .grid-col-3{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 576px){
+    .grid-col-3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+/* Custom card */
+.card-custom{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.card-custom i{
+    font-size: 2.5rem;
+}
+
+
+
+/* Contaiiner com max-width menor */
+@media(min-width: 1000px){
+    .container{
+        max-width: 1000px !important;
+    }
+}
+
+/********************** Fim Componentes **********************/
+/********************** Fim Componentes **********************/
+/********************** Fim Componentes **********************/
+/********************** Fim Componentes **********************/
+/********************** Fim Componentes **********************/
+
+
+
+
+
+
+/********************** MENUS **********************/
+/********************** MENUS **********************/
+/********************** MENUS **********************/
+/********************** MENUS **********************/
+/********************** MENUS **********************/
+
+
+
+/* Menu principal */
+#myNavbar{
+    background-color: white;
+}
+#myNavbar .navbar-brand img{
+    height: 60px;
+    width: auto;
+}
+#myNavbar .navbar-nav{
+    display: flex;
+    align-items: center;
+}
+#myNavbar .nav-link{
+    font-size: .8rem;
+    text-transform: var(--estilo-titulos);
+    letter-spacing: 1.5px;
+}
+#myNavbar .dropdown-item{
+    font-size: 1rem;
+    text-transform: var(--estilo-titulos);
+    letter-spacing: 1.5px;
+}
+#myNavbar .nav-item{
+    margin-right: 10px;
+}
+#myNavbar .nav-item:last-child{
+    margin-right: 0px;
+}
+
+
+
+
+/********************** FIM MENUS **********************/
+/********************** FIM MENUS **********************/
+/********************** FIM MENUS **********************/
+/********************** FIM MENUS **********************/
+/********************** FIM MENUS **********************/
+
+
+
+
+
+/********************** PÁGINA INICIAL **********************/
+/********************** PÁGINA INICIAL **********************/
+/********************** PÁGINA INICIAL **********************/
+/********************** PÁGINA INICIAL **********************/
+/********************** PÁGINA INICIAL **********************/
+
+
+/* Header */
+#mainHeader{
+    background-color: var(--cor-primaria);
+}
+
+
+/* Carrosel Personalizado */
+#mainCarousel,
+#mainCarousel .carousel-inner,
+#mainCarousel .carousel-inner .carousel-item{
+    width: 100%;
+    height: 100%;
+}
+#mainCarousel .carousel-inner .carousel-item{
+    color: white;
+    background-color: var(--cor-primaria);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#mainCarousel .carousel-inner .carousel-item span{
+    margin-bottom: .5rem;
+}
+#mainCarousel .carousel-inner .carousel-item .my-btn-2{
+    width: fit-content;
+}
+#mainCarousel .carousel-inner .carousel-item .carousel-content{
+    min-height: calc(100vh - 94px);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#mainCarousel .carousel-inner .carousel-item .carousel-content > div{
+    margin: var(--espaço-secoes) 0;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Alinhamanetos */
+#mainCarousel .carousel-inner .carousel-item .carousel-content-esquerda{
+    justify-content: flex-start;
+}
+#mainCarousel .carousel-inner .carousel-item .carousel-content-esquerda > div{
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+}
+#mainCarousel .carousel-inner .carousel-item .carousel-content-centro{
+    justify-content: center;
+}
+#mainCarousel .carousel-inner .carousel-item .carousel-content-centro > div{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#mainCarousel .carousel-inner .carousel-item .carousel-content-direita{
+    justify-content: flex-end;
+}
+#mainCarousel .carousel-inner .carousel-item .carousel-content-direita > div{
+    justify-content: right;
+    align-items: flex-end;
+    text-align: right;
+}
+
+
+/* Controladores */
+#mainCarousel .carousel-controles .carousel-control-next,
+#mainCarousel .carousel-controles .carousel-control-prev {
+    opacity: 0.2 !important;
+    width: 50px;
+}
+#mainCarousel .carousel-controles svg {
+    width: 2em !important;
+    /* font-size: 1.3rem; */
+    color: white;
+}
